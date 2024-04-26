@@ -5,8 +5,9 @@ import OpenAI from "openai";
 const Chatbox = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  const apiKey = "sk-proj-kVEpgZRciY0bPBx3Gi5RT3BlbkFJtbgJpSULcxgeX32firgJ"; 
   const openai = new OpenAI({
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+  apiKey: ['sk-proj-kVEpgZRciY0bPBx3Gi5RT3BlbkFJtbgJpSULcxgeX32firgJ'],
   dangerouslyAllowBrowser: true, 
 });
 
@@ -43,8 +44,8 @@ main();
         },
         {
           headers: {
-            Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
-          }
+            Authorization: `Bearer ${apiKey}`,
+          },
         }
       );
 
