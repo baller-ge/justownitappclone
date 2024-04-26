@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.message {
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 80%;
+  }
+  
+  .user {
+    float: right;
+  }
+  
+  .ai.message {
+    background-color: #e4c7c7;
+    float: right;
+  }
